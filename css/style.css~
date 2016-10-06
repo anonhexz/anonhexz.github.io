@@ -1,0 +1,59 @@
+/* cor de fundo */
+body {
+	  background-color: #000000;
+	  border-top: 1px dashed rgba(255,255,255,0.5);
+     background-color: #000000;
+     margin: 0 auto;
+     padding: 0;
+     font-family: monospace;
+     font-size: 12px;
+     line-height: unset !important;
+     color: rgba(255,255,255,0.6);
+     text-align: center;
+     //width: 800px;
+	}
+
+header {
+    margin-top: 25px;
+    margin-bottom: 10px;
+    
+}
+header p {
+    text-align: left;
+    margin: 0;
+}    	
+
+h1 {
+   color: #C0C0C0;
+}	
+/* cor fonte */
+h2 {
+  	color: #006400;
+	}
+/* fonte */
+h2 {font-family: arial, verdana, sans-serif;}
+/* links */
+a:link 
+{ 
+ text-decoration:none; 
+} 
+
+/* unvisited link */
+a:link {
+    color: green
+}
+
+/* visited link */
+a:visited {
+    color: green;
+}
+
+/* mouse over link */
+a:hover {
+    color: white;
+}
+
+/* selected link */
+a:active {
+    color: green;
+}

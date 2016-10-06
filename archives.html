@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta content="text/html; charset=UTF-8" http-equiv="content-type">
+    <title>hexz</title>
+    <!-- favicon -->
+    <link rel="shortcut icon" href="/home/hexz/site/images/favicon.ico">
+    <!-- cdd style -->
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <meta name="description" content="Página simples destinada à dicas sobre computação em geral.">
+    <meta name="keywords" content="hacking,hacker,cracker,linux,computação,deep web,kali linux,secury,security,hexz,hexz secury">
+  </head>
+  <body>
+    <!-- menu 1 -->
+    <div style="text-align: center;"> <a title="home" href="index.html">|home|</a>
+      <a title="archives" href="archives.html">|archives|</a> <a title="links"
+        href="links.html">|links|</a> <a title="contact" href="contact.html">|contact|</a></div>
+    <h2><a title="home" href="index.html">hexz</a></h2>
+    <center style="height: 445px; margin-top: 5px;">
+      <div style="text-align: left;"><font color="red"><b><br>
+          </b></font>
+        <center>
+          <table style="width: 762px; height: 454px;" border="0">
+            <tbody>
+              <tr>
+                <td style="width: 796px; height: 281px; margin-left: 33px;"><br>
+                  <br>
+                  <font color="red"><b>root@hexz</b></font>:<font color="blue">~</font>#
+                  ls<br>
+                  texto1.txt&nbsp; texto2.txt texto3.txt&nbsp; Desktop&nbsp;
+                  Documents&nbsp; Downloads<br>
+                  <font color="red"><b>root@hexz</b></font>:<font color="blue">~</font>#
+                  cd Documents<br>
+                  <font color="red"><b>root@hexz</b></font>:<font color="blue">~/Documents</font>#
+                  touch archives.txt<br>
+                  #####Usando o tor como proxy do sistema######<br>
+                  <br>
+                  Primeiramente instalar o tor caso ainda não esteja instalado.<br>
+                  <br>
+                  # apt update<br>
+                  # apt install tor<br>
+                  <br>
+                  Caso queira que o tor use apenas IP de algum país em
+                  específico edite<br>
+                  o arquivo torrc.<br>
+                  <br>
+                  # nano /etc/tor/torrc<br>
+                  <br>
+                  E acrecente o as seguintes linhas no final do arquivo:<br>
+                  <br>
+                  StrictExitNodes 1<br>
+                  ExitNodes {en}<br>
+                  <br>
+                  No lugar de "en" coloque a sigla do país que preferir, se
+                  desejar mais de um<br>
+                  coloque as siglas separando-as com virgula.<br>
+                  <br>
+                  Agora coloque o tor para iniciar junto com o sistema.<br>
+                  <br>
+                  # systemctl enable tor.service<br>
+                  <br>
+                  Caso queira tirar da inicialização.<br>
+                  <br>
+                  # systemctl disable tor.service<br>
+                  <br>
+                  Primeiro olhe o seu IP real.<br>
+                  <br>
+                  # curl http://ifconfig.me<br>
+                  <br>
+                  Agora faça o teste para ver se mudou o IP.<br>
+                  <br>
+                  # curl&nbsp;
+                  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+                  --proxy socks5://127.0.0.1:9050 http://ifconfig.me<br>
+                  <br>
+                  Se seguiu a dica corretamente, provavelmente ira da certo,
+                  agora é só configurar<br>
+                  o proxy no seu sistema ou na sua aplicação com as seguintes
+                  opções:<br>
+                  <br>
+                  127.0.0.1<br>
+                  9050<br>
+                  Socks5<br>
+                  <br>
+                  E é isso, thanks for the visit =)<br>
+                  <br>
+                  <br>
+                  <font color="red"><b>root@hexz</b></font>:<font color="blue">~</font>#
+                  _<br>
+                  <br>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </center>
+        <br>
+        <div style="margin-left: 320px;"> <br>
+        </div>
+      </div>
+      <!-- menu2 -->
+      <p><a title="home" href="index.html">|home|</a> <a title="archives" href="archives.html">|archives|</a><a
+          title="links" href="links.html"> |links|</a> <a title="contact" href="contact.html">|contact|</a>
+      </p>
+      <p> Todos os direitos reservados </p>
+      <p> by hexz </p>
+    </center>
+    <!-- código by hexz, bagunçado mais eu entendo rs -->
+  </body>
+</html>
