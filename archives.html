@@ -123,30 +123,30 @@
 <br>isso é recomendado pois dependendo da complexidade da senha que se pretende quebrar
 <br>e do seu hardware, você pode fritar a sua maquina. Para fazer o teste, rode o comando:
 
-<br># john --test
+<p># john --test
 
-<br>Ele irá testar com todas as criptografias disponíveis.
+<p>Ele irá testar com todas as criptografias disponíveis.
 
-<br>Agora um exemplo da funcionalidade da ferramenta, primeiramente deve-se 
+<p>Agora um exemplo da funcionalidade da ferramenta, primeiramente deve-se 
 <br>criar um arquivo com a extensão ".db" com o nome que desejar, contendo
 <br>dentro o conteúdo de "/etc/passwd" ou de alguma outra hash que queira quebrar.
 
-<br># unshadow /etc/passwd /etc/shadow >> senha.db
+<p># unshadow /etc/passwd /etc/shadow >> senha.db
 
-<br>Agora é só rodar o John setando o arquivo:
+<p>Agora é só rodar o John setando o arquivo:
 
-<br># john senha.db
+<p># john senha.db
 
-<br>Dependendo da complexidade da senha isso pode demorar muito, mas se for uma senha simples
+<p>Dependendo da complexidade da senha isso pode demorar muito, mas se for uma senha simples
 <br>de até cinco caracter simples como nomes de pessoas, animais, objetos... será muito mais rápido
 <br>e o tempo também pode variar de acordo com o seu hardware.
 
-<br>Esse metodo mostrado a cima, é uma forma muito básica e mais demorada, podemos também testar com
+<p>Esse metodo mostrado a cima, é uma forma muito básica e mais demorada, podemos também testar com
 <br>uma wordlist pre existente ou se não tiver uma existe algumas formas de se cria-las entre elas
 <br>a primeira com crunch e a outra com o unshadown, essas opções de wordlist pode ser útil quando
 <br>não se tem acesso root na maquina que está realizando a tarefa, não é um dos metodos de mais sucesso
 <br>pois se não tiver uma wordlist robusta e abrangente de nada irá adiantar o uso do John.
-
+<p>
                   E é isso, thanks for the visit =)<br>
                   <br>
                   <br>
