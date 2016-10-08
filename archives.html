@@ -41,7 +41,7 @@
                   cd Documents<br>
                   <font color="red"><b>root@hexz</b></font>:<font color="blue">~/Documents</font>#
                   touch archives.txt<br>
-                  #####Usando o tor como proxy do sistema######<br>
+                  ############### Usando o tor como proxy do sistema ################<br>
                   <br>
                   Primeiramente instalar o tor caso ainda não esteja instalado.<br>
                   <br>
@@ -90,6 +90,63 @@
                   9050<br>
                   Socks5<br>
                   <br>
+                  <p>
+                  ############### Quebrar senhas com John the ripper###############
+                  <br>
+                  <br>John the Ripper é um cracker de senhas rápido, disponível para vários
+                  <br>sistemas incluido Linux. O seu objetivo principal é detectar senhas
+                  <br>fracas Unix. Além de vários crypt(3) tipos de hash de senhas mais comumente
+                  <br>encontrados em vários sistemas Unix e muito mais.
+                  <br>Para mais informações acesse a home page da ferramente ou digite:
+                    # man john
+
+<br>Para acessar o manual.
+
+<br>O John trabalha de alguns modos diferentes, entre eles:
+
+<br>Wordlist - Testando as possiveis combinações de usuário e senha.
+
+<br>Single Crack - Tenta quebrar a senha através de informações dísponiveis
+<br>tais como login/GECOS como senhas.
+
+<br>Incremental - Este é o modo mais complexo, pois ele testa todos possiveis
+<br>caracteres até chegar na senha correta.
+
+<br>Caso não esteja rodando o kali ou alguma distro de pentest, digite no terminal
+<br>para instala-lo:
+
+<br># apt install john
+
+<br>Em alguns segundos ele estará instalado.
+
+<br>Se quiser fazer um teste para testar o desempenho da maquina com o uso do John
+<br>isso é recomendado pois dependendo da complexidade da senha que se pretende quebrar
+<br>e do seu hardware, você pode fritar a sua maquina. Para fazer o teste, rode o comando:
+
+<br># john --test
+
+<br>Ele irá testar com todas as criptografias disponíveis.
+
+<br>Agora um exemplo da funcionalidade da ferramenta, primeiramente deve-se 
+<br>criar um arquivo com a extensão ".db" com o nome que desejar, contendo
+<br>dentro o conteúdo de "/etc/passwd" ou de alguma outra hash que queira quebrar.
+
+<br># unshadow /etc/passwd /etc/shadow >> senha.db
+
+<br>Agora é só rodar o John setando o arquivo:
+
+<br># john senha.db
+
+<br>Dependendo da complexidade da senha isso pode demorar muito, mas se for uma senha simples
+<br>de até cinco caracter simples como nomes de pessoas, animais, objetos... será muito mais rápido
+<br>e o tempo também pode variar de acordo com o seu hardware.
+
+<br>Esse metodo mostrado a cima, é uma forma muito básica e mais demorada, podemos também testar com
+<br>uma wordlist pre existente ou se não tiver uma existe algumas formas de se cria-las entre elas
+<br>a primeira com crunch e a outra com o unshadown, essas opções de wordlist pode ser útil quando
+<br>não se tem acesso root na maquina que está realizando a tarefa, não é um dos metodos de mais sucesso
+<br>pois se não tiver uma wordlist robusta e abrangente de nada irá adiantar o uso do John.
+
                   E é isso, thanks for the visit =)<br>
                   <br>
                   <br>
