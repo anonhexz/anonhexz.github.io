@@ -13,14 +13,17 @@ body {
      //width: 800px;
 	}
 
-.geral {
-	min-height:100%;
-	position:relative;
-	width:800px;
 }
 
 html, body {height:100%;}
 
+.geral {
+	min-height:100%;
+	position:relative;
+	width:800px;
+	
+	}
+	
 /* rodapé */
 .footer {
 	position:absolute;
@@ -28,11 +31,17 @@ html, body {height:100%;}
 	width:100%;
 }
 
+.content {overflow:hidden;}
+.aside {width:200px;}
+.fleft {float:left;}
+.fright {float:right;}
+
 header {
     margin-top: 25px;
     margin-bottom: 10px;
     
 }
+
 header p {
     text-align: left;
     margin: 0;
