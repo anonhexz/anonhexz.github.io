@@ -97,7 +97,7 @@
                   Socks5<br>
                   <br>
                   <p>
-                  ############### Quebrar senhas com John the ripper###############
+                  ############### Quebrar senhas com John the ripper ###############
                   <br>
                   <br>John the Ripper é um cracker de senhas rápido, disponível para vários
                   <br>sistemas incluido Linux. O seu objetivo principal é detectar senhas
@@ -108,51 +108,51 @@
 
                   <p>Para acessar o manual.
 
-<p>O John trabalha de alguns modos diferentes, entre eles:
+                  <p>O John trabalha de alguns modos diferentes, entre eles:
 
-<p>Wordlist - Testando as possiveis combinações de usuário e senha.
+                  <p>Wordlist - Testando as possiveis combinações de usuário e senha.
 
-<p>Single Crack - Tenta quebrar a senha através de informações dísponiveis
-<br>tais como login/GECOS como senhas.
+                  <p>Single Crack - Tenta quebrar a senha através de informações dísponiveis
+                  <br>tais como login/GECOS como senhas.
 
-<p>Incremental - Este é o modo mais complexo, pois ele testa todos possiveis
-<br>caracteres até chegar na senha correta.
+                  <p>Incremental - Este é o modo mais complexo, pois ele testa todos possiveis
+                  <br>caracteres até chegar na senha correta.
 
-<p>Caso não esteja rodando o kali ou alguma distro de pentest, digite no terminal
-<br>para instala-lo:
+                  <p>Caso não esteja rodando o kali ou alguma distro de pentest, digite no terminal
+                  <br>para instala-lo:
 
-<p># apt install john
+                  <p># apt install john
 
-<p>Em alguns segundos ele estará instalado.
+                  <p>Em alguns segundos ele estará instalado.
 
-<p>Se quiser fazer um teste para testar o desempenho da maquina com o uso do John
-<br>isso é recomendado pois dependendo da complexidade da senha que se pretende quebrar
-<br>e do seu hardware, você pode fritar a sua maquina. Para fazer o teste, rode o comando:
+                  <p>Se quiser fazer um teste para testar o desempenho da maquina com o uso do John
+                  <br>isso é recomendado pois dependendo da complexidade da senha que se pretende quebrar
+                  <br>e do seu hardware, você pode fritar a sua maquina. Para fazer o teste, rode o comando:
 
-<p># john --test
+                  <p># john --test
 
-<p>Ele irá testar com todas as criptografias disponíveis.
+                  <p>Ele irá testar com todas as criptografias disponíveis.
 
-<p>Agora um exemplo da funcionalidade da ferramenta, primeiramente deve-se 
-<br>criar um arquivo com a extensão ".db" com o nome que desejar, contendo
-<br>dentro o conteúdo de "/etc/passwd" ou de alguma outra hash que queira quebrar.
+                  <p>Agora um exemplo da funcionalidade da ferramenta, primeiramente deve-se 
+                  <br>criar um arquivo com a extensão ".db" com o nome que desejar, contendo
+                  <br>dentro o conteúdo de "/etc/passwd" ou de alguma outra hash que queira quebrar.
 
-<p># unshadow /etc/passwd /etc/shadow >> senha.db
+                  <p># unshadow /etc/passwd /etc/shadow >> senha.db
 
-<p>Agora é só rodar o John setando o arquivo:
+                  <p>Agora é só rodar o John setando o arquivo:
 
-<p># john senha.db
+                  <p># john senha.db
 
-<p>Dependendo da complexidade da senha isso pode demorar muito, mas se for uma senha simples
-<br>de até cinco caracter simples como nomes de pessoas, animais, objetos... será muito mais rápido
-<br>e o tempo também pode variar de acordo com o seu hardware.
+                  <p>Dependendo da complexidade da senha isso pode demorar muito, mas se for uma senha simples
+                  <br>de até cinco caracter simples como nomes de pessoas, animais, objetos... será muito mais rápido
+                  <br>e o tempo também pode variar de acordo com o seu hardware.
 
-<p>Esse metodo mostrado a cima, é uma forma muito básica e mais demorada, podemos também testar com
-<br>uma wordlist pre existente ou se não tiver uma existe algumas formas de se cria-las entre elas
-<br>a primeira com crunch e a outra com o unshadown, essas opções de wordlist pode ser útil quando
-<br>não se tem acesso root na maquina que está realizando a tarefa, não é um dos metodos de mais sucesso
-<br>pois se não tiver uma wordlist robusta e abrangente de nada irá adiantar o uso do John.
-<p>
+                  <p>Esse metodo mostrado a cima, é uma forma muito básica e mais demorada, podemos também testar com
+                  <br>uma wordlist pre existente ou se não tiver uma existe algumas formas de se cria-las entre elas
+                  <br>a primeira com crunch e a outra com o unshadown, essas opções de wordlist pode ser útil quando
+                  <br>não se tem acesso root na maquina que está realizando a tarefa, não é um dos metodos de mais sucesso
+                  <br>pois se não tiver uma wordlist robusta e abrangente de nada irá adiantar o uso do John.
+                  <p>
                   E é isso, thanks for the visit =)<br>
                   <br>
                   <br>
