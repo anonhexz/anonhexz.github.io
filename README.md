@@ -1,2 +1,2 @@
 # anonhexz.github.io
-Simples page Sobre Computação especialmente GNU / Linux.
+Blog sobre tecnologia, computação e GNU/Linux com foco em segurança da informação.
